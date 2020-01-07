@@ -133,7 +133,7 @@ public class MaxCore {
         }
         Class<?> type = each.getTestClass();
         if (type == null) {
-            throw new RuntimeException("Can't build a runner from description [" + each + "]");
+            throw new NullPointerException("Can't build a runner from description [" + each + "]");
         }
         String methodName = each.getMethodName();
         if (methodName == null) {
